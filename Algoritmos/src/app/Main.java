@@ -1,6 +1,7 @@
 package app;
 
 import util.Algoritmos;
+import util.Factorial;
 
 public class Main {
 
@@ -8,6 +9,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		
 		int sumatorio = Algoritmos.sumatorio(3);
+		int factorial = Factorial.factorial(4);
 
 	}
 
