@@ -11,11 +11,20 @@ public abstract class Algoritmos {
             return num * factorial(num - 1);
     }
 	
-	 public static int fibonacci(int numero) {
-	        if (numero <= 1)
-	            return numero;
+	 public static int fibonacci(int num) {
+	        if (num <= 1)
+	            return num;
 	        else
-	            return fibonacci(numero - 1) + fibonacci(numero - 2);
+	            return fibonacci(num - 1) + fibonacci(num - 2);
 	    }
+	 
+	 public static boolean esPrimo(int num) {
+	        if (num <= 1)
+	            return false;
+	        for (int i = 2; i <= Math.sqrt(num); i++) {
+	            if (num % i == 0)
+	                return false;
+	        }
+	        return true;
 
 }
